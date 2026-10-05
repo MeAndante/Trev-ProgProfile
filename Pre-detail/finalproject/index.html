@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Information Technology Education</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="modal" id="myLogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="p-3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <span class="fa fa-user"></span>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="username" placeholder="Username" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">                                    
+                                    <span class="input-group-text">
+                                        <span class="fa fa-key"></span>                                    
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>                               
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" name="signup">Login</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myRegister">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="p-3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <span class="fa fa-user"></span>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="username" placeholder="Username" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">                                    
+                                    <span class="input-group-text">
+                                        <span class="fa fa-key"></span>                                    
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>                               
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" name="signup">Sign Up</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id=home>
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
+                    <ul class="navbar-nav mr-auto h6">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link text-dark">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link text-dark dropdown-toggle" id="aboutDrop" data-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu bg-warning">
+                                <a href="#history" class="dropdown-item text-dark">History</a>
+                                <a href="#vmgo" class="dropdown-item text-dark">Vision, Mission, Goals, and Objectives</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link text-dark dropdown-toggle" id="programsDrop" data-toggle="dropdown">Programs</a>
+                            <div class="dropdown-menu bg-warning">
+                                <a href="bscs.html" class="dropdown-item text-dark">Bachelor of Science in Computer Science</a>
+                                <a href="bsit.html" class="dropdown-item text-dark">Bachelor of Science in Information Technology</a>
+                                <a href="bsis.html" class="dropdown-item text-dark">Bachelor of Science in Information Systems</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#news" class="nav-link text-dark">News</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto h6">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark" data-toggle="modal" data-target="#myRegister" style="cursor: pointer;">
+                            <i class="fa fa-pencil"></i>Sign Up!
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark" data-toggle="modal" data-target="#myLogin" style="cursor: pointer;">
+                                <i class="fa fa-sign-in"></i>Login
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="bg-dark p-1 m-0 text-center text-secondary">
+                    WELCOME TO
+                </h2>
+                <h2 class="bg-dark p-1 m-0 text-center text-white">
+                    COLLEGE OF INFORMATION TECHNOLOGY EDUCATION
+                    <br>
+                    Official Website
+                </h2>
+                
+                <div id="cascarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#cascarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#cascarousel" data-slide-to="1"></li>
+                        <li data-target="#cascarousel" data-slide-to="2"></li>
+                    </ol>
+                        
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="C:\Users\trevo\TGPCodes\finalproject\img\news_1.jpg" alt="Picture 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\trevo\TGPCodes\finalproject\img\news_2.jpg" alt="Picture 2" class="d-block w-100">
+                        </div>
+                         <div class="carousel-item">
+                            <img src="C:\Users\trevo\TGPCodes\finalproject\img\news_3.jpg" alt="Picture 3" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\trevo\TGPCodes\finalproject\img\news_4.jpg" alt="Picture 4" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#cascarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cascarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2" id="history">
+            <div class="col-12">
+                <h2 class="bg-warning w-75 p-2 rounded">History</h2>
+                <p class="text-justify">
+                    The College of Information Technology Education (CITE) was established to respond to the growing demand for specialized IT education and to prepare graduates for the dynamic digital landscape. It traces its roots to the College of Arts & Sciences (CAS), which initially offered foundational courses in computing and information technology.
+                </p>
+                <p class="text-justify">
+                    On March 14, 2025, the Board of Regents formally approved the establishment of CITE as a separate college, marking a significant milestone in the university's commitment to advancing technology education. The creation of CITE was the result of the collaborative initiatives of three Deans of CAS—Dr. Filemon A. Pamittan, Dr. Lori Shayne A. Busa, and Dr. Julius S. Valderama. The proposal for the establishment of CITE was presented during the term of Dr. Valderama, the current Dean of CAS, to the University Academic Council and subsequently to the Board of Regents. This milestone was realized through the visionary leadership of University President Dr. Wilfredo A. Dumale, Jr., whose unwavering support for academic excellence and institutional development ensured the smooth establishment and formal recognition of the college. The initiative enabled a more focused curriculum, the expansion of research initiatives, and the creation of opportunities for innovation and collaboration in the IT sector. Prior to the establishment of CITE, the academic programs BSCS, BSIT, and BSIS were offered under CAS; their transfer to the new college allowed for specialized focus and growth in the field of information technology.
+                </p>
+                <p class="text-justify">
+                    CITE currently offers three academic programs: Bachelor of Science in Computer Science (BSCS), Bachelor of Science in Information Technology (BSIT), and Bachelor of Science in Information Systems (BSIS). For the first semester of the academic year 2025-2026, the college has a total enrollment of 1,275 students, reflecting its growing reputation and relevance.
+                </p>
+                <p class="text-justify">
+                    Under the leadership of its first dean, Dr. Carmelo Alejo D. Bisquera, and with the continued support of the university administration, CITE continues to pursue excellence in teaching, research, and community engagement, preparing graduates to contribute meaningfully to the global IT community and the advancement of technology-driven solutions.
+                </p> 
+            </div>
+        </div>
+        <div class="row mt-2" id="vmgo">
+            <h2 class="bg-warning w-75 p-2 rounded">
+                Vision, Mission, Goals, and Objectives
+            </h2>
+            <div class="col-6">
+                <h3>VISION</h3>
+                <p class="text-justify">
+                    To be a leading college that develops skilled, responsible and innovative IT Professionals for a better digital future.
+                </p>
+            </div>
+            <div class="col-6">
+                <h3>MISSION</h3>
+                <p class="text-justify">
+                    The College of Information Technology Education aims to empower students with the skills and mindset needed to succeed in the dynamic IT industry.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-2" id="goals">
+            <div class="col-6">
+                <h3>GOALS</h3>
+                <p class="text-justify">
+                    To provide a board IT education that prepares students for successful careers in various sectors of the technology industry.
+                </p>
+                <ol>
+                    <li>To instill in students the importance of acting with integrity and contributing positively to the community.</li>
+                    <li>To promote groundbreaking IT research aimed at global challenges.</li>
+                    <li>To build strong connections with business and past graduates, which helps us improve academic programs and job placement opportunities.</li>
+                    <li>To provide an environment that sparks critical thinking, creativity, and a commitment to lifelong learning.</li>
+                </ol>
+            </div>
+            <div class="col-6">
+                <h3>OBJECTIVES</h3>
+                <ol>
+                    <li><b>Academic Excellence:</b> Offer IT programs that are accredited and up to date as well as micro-credentials that adhere to global standards of quality and align with the needs of the technology industry.</li>
+                    <li><b>Skills Development:</b> Empower students with practical, industry-relevant skills through hands-on projects, pitching, internships, and collaboration with industry professionals.</li>
+                    <li><b>Ethical Leadership:</b> Cultivate an environment that promotes ethical choices, responsibility, and integrity in how technology is used and developed.</li>
+                    <li><b>Global Competitiveness:</b> Equip students for the global IT job market by building up their communication, problem solving, and teamwork abilities.</li>
+                    <li><b>Research and Innovation:</b> Foster an environment of research and tech innovation that helps our local community.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row mt-2" id="programs">
+            <h2 class="bg-warning w-75 p-2 rounded">
+                Degree Programs
+            </h2>
+            <p>
+                Explore our academic programs designed to develop technical competence, critical thinking, and industry-relevant skills for success in the digital field.
+            </p>
+            <div class="col-4">
+                <h6>BS in Computer Science</h6>
+                <p>
+                    This program includes the study of computing concepts and theories, algorithmic foundations and new developments in computing. It prepares students to design and create algorithmically complex software and develop new and effective algorithms for solving computing problems.
+                </p>
+            </div>
+            <div class="col-4">
+                <h6>BS in Information Technology</h6>
+                <p>
+                    This program includes the study of the utilization of both hardware and software technologies involving planning, installing, customizing, operating, managing and administering, and maintaining information infrastructure that provides computing solutions to address the needs of an organization.
+                </p>
+            </div>
+            <div class="col-4">
+                <h6>BS in Information Systems</h6>
+                <p>
+                   This program includes the study of application and effect of information technology to organizations. It also prepare graduates to implement an information systems, which considers complex technological and organizational factors affecting it.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-2" id="news">
+            <h2 class="bg-warning w-75 p-2 rounded">News</h2>
+            <div class="col-6 text-center">
+                <img src="C:\Users\trevo\TGPCodes\acti4\img\news_1.jpg" alt="Picture 1" height="350px">
+            </div>
+            <div class="col-6 text-center">
+                <img src="C:\Users\trevo\TGPCodes\acti4\img\news_2.jpg" alt="Picture 2" height="350px">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-6">
+                <p class="text-justify">
+                    <b>CITE welcomes four new Faculty Members.</b>
+                    The College of Information Technology is proud to introduce its four new faculty members - Ramonsito Adducul (Associate Professor V), Paul Louie L. Tito (Instructor I), Floren L Suip (Instructor I), and Christopher T. Escalante (Instructor I) - who formally took their oath during the NVSU's 11th "Panunumpa" Appointment Ceremony on January 26, 2026.
+                </p>
+            </div>
+            <div class="col-6">
+                <p class="text-justify">
+                    The Bachelor of Science in Information Technology (BSIT) researchers of <b>Nueva Vizcaya State University</b>
+                    proudly represented the College of Information Technology Education at the <b>3rd International Student Research Congress (ISRC) 2026,</b> held on February 7, 2026, and hosted by the Institute of Industry and Academic Research, Inc. in partnership with STI West Negros University.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-6 text-center">
+                <img src="C:\Users\trevo\TGPCodes\acti4\img\news_3.jpg" alt="Picture 3" height="350">
+            </div>
+            <div class="col-6 text-center">
+                <img src="C:\Users\trevo\TGPCodes\acti4\img\news_4.jpg" alt="Picture 4" height="350">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-6">
+                <p class="text-justify">
+                    <b>PHOTO PART 1|</b> The Nueva Vizcaya State University - College of Information Technology Education (CITE) formally held the OJT Sending-Off and Pinning Ceremony for its third- and fourth-year students at the NVSU Gymnasium. Anchored on the theme #UPSKILL: Uplifting Potential through Soft and Technical Knowledge for Industry-Led Learning, the event marked a significant milestone as students were officially endorsed for their on-the-job training.
+                    <br>The ceremony highlighted the importance of strengthening both technical competencies and soft skills in preparing students for industry immersion. Through this meaningful occasion, CITE reaffirmed its commitment to producing competent, industry-ready professionals equipped to meet the evolving demands of the workplace.
+                </p>
+            </div>
+            <div class="col-6">
+                <p class="text-justify">
+                    <b>SIRIB ITI ENTABLADO 2025|</b> CITE proudly showcased exceptional talent, creativity, and pride during the Sirib iti Entablado held on November 27, 2025, at the NVSU Bambang Campus. Through compelling performances and confident stage presence, our students brought the event to life—captivating the audience and demonstrating the true essence of excellence and artistry that Sirib iti Entablado stands for.
+                    <br>This celebration of skill and passion reflects the dedication of our performers as they continue to raise the bar of creativity. Their inspiring display of commitment and teamwork reminds us that the stage is not only a place to perform—but a space to shine, express, and lead with confidence
+                </p>
+            </div>
+        </div>
+        <footer class="bg-warning text-dark text-center mt-2 p-1">
+            <p>Developed by: Trevor Garrett P. Santos</p>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

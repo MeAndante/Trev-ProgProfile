@@ -1,0 +1,39 @@
+First Name: Trevor Garrett
+Middle Name (Mother's Family Name): Parong
+Last Name (Father's Family Name): Santos
+
+Address: #20 Zamora St., Brgy. Don Domingo Maddela, Bayombong, Nueva Vizcaya.
+Contact Number: 09650466081
+E-mail: trevorparong@gmail.com
+
+
+Education:
+	Currently Enrolled in Nueva Vizcaya State University as a 3rd-Year student taking the course of Bachelor of Science in Information Technology, 
+specialization in Web and Mobile Applications
+
+	Finished the TESDA Technical-Vocational trade course for the Driving National Certificate II on August 2022 at the 
+TESDA Provincial Training Center Nueva Vizcaya
+
+Projects:
+
+CALCULATOR Mobile Applications
+	"Cel-Kal-Culator" a simple temperature converter application which lets users input a temperature set in celsius, kelvin, or fahrenheit and 
+then converts it into their other unit measurements
+	
+	"Wage Calculator" which lets users input their monthly salary or their salary per hour and then asks for a total "hours per week" measure
+to calculate their Gross Salary and Net Salary, taking into consideration the deductions from their taxes.
+	
+	"BMI Calculator" which lets users input their height and weight in various units of measurements and calculates their BMI together with their rating
+	
+	"Grades Calculator" which lets users input their midterms and final term grades to calculate their semester grade, their rating, and if they passed or failed
+	
+	"Basic Calculator" an app that has the 4 basic arithmetic functions of addition, subtraction, multiplication, and division.
+It lets the user input two numbers and then output the result depending on the which function button they press.
+It does not have a history log and will automatically clear the two input number after pressing "Next" on the result tab.
+
+FRONT-END Designs for websites
+	University College if Information Technology and Education Webpage - with the focus on the university mission and vision, college courses, events and programs, and also of the developments with the college department offices and faculty members
+
+	Student Information Page - A simple profile page for students with the focus on the gallery section so they could share their pictures in school programs and their experiences
+
+	Deck Building Page for Pokémon TCG - with only the first few generation of cards as I still do not know how to integrate a large amount of media files and a simple card selection and management tool
