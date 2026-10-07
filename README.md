@@ -26,4 +26,4 @@ No environment variables or server functions are required. The site can also be 
 - Change colors, layout, and responsive styles in `src/styles.css`.
 - Update page metadata in `index.html`.
 
-Project stack labels reflect the available project files and notes. The supplied notes did not name the implementation tools for the calculator apps, so those are described by their application type instead of guessing a framework.
+Project stack labels reflect the available project files and notes. The calculator app card lists HTML, CSS, Bootstrap, and MIT App Inventor as its implementation tools. The profile portrait is stored in `Pictures/` and imported by the Vite app.

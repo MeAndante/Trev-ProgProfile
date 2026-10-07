@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
+import profilePhoto from '../Pictures/PEEKTCHOORMOOOO.jpg';
 
 const projects = [
   {
@@ -8,8 +9,7 @@ const projects = [
     title: 'Everyday Calculators',
     description:
       'A collection of practical mobile app concepts: a temperature converter, wage calculator, BMI calculator, grades calculator, and a basic arithmetic calculator.',
-    stack: ['Mobile applications', 'Calculator logic'],
-    note: 'Individual implementation tools were not listed in the project notes.',
+    stack: ['HTML', 'CSS', 'Bootstrap', 'MIT App Inventor'],
   },
   {
     number: '02',
@@ -43,6 +43,8 @@ function App() {
           <a href="#home">Home</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
         <a className="header-contact" href="mailto:trevorparong@gmail.com">Let’s talk <span>↗</span></a>
       </header>
@@ -58,11 +60,11 @@ function App() {
               <a className="text-link" href="mailto:trevorparong@gmail.com">trevorparong@gmail.com <span>↗</span></a>
             </div>
           </div>
-          <div className="hero-art" aria-label="Decorative code-inspired illustration" role="img">
+          <div className="hero-art" aria-label="Portrait and code-inspired design">
             <div className="orbit orbit-one" />
             <div className="orbit orbit-two" />
             <div className="orbit orbit-three" />
-            <div className="art-core"><span>&lt;</span><b>build</b><span>/&gt;</span></div>
+            <img className="profile-photo" src={profilePhoto} alt="Portrait of Trevor Garrett P. Santos" />
             <span className="art-label label-top">curious by nature</span>
             <span className="art-label label-bottom">designed to be useful</span>
             <span className="spark spark-a">✳</span><span className="spark spark-b">✳</span>
@@ -129,6 +131,46 @@ function App() {
                 <span className="project-arrow" aria-hidden="true">↗</span>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="about section-wrap" id="about">
+          <div className="about-copy">
+            <div className="section-heading">
+              <p className="eyebrow">A LITTLE ABOUT ME</p>
+              <h2>Learning by<br />building<span>.</span></h2>
+            </div>
+            <p className="about-text">I’m a BSIT-WMAD student focused on my studies and steadily building the skills to create useful web and mobile experiences. I enjoy reading, drawing, writing, playing video games and card games, and caring for my cats. Programming gives me a way to bring those interests together with curiosity and problem-solving.</p>
+          </div>
+          <div className="skills-panel">
+            <p className="eyebrow">SKILLS I’M DEVELOPING</p>
+            <div className="skills-list">
+              {['HTML', 'CSS', 'JavaScript', 'SQL', 'Java', 'Python', 'PHP'].map((skill) => (
+                <span className="skill-chip" key={skill}>{skill}</span>
+              ))}
+            </div>
+            <p className="skills-caption">Growing through coursework, practice, and personal projects.</p>
+          </div>
+        </section>
+
+        <section className="contact section-wrap" id="contact">
+          <div className="contact-heading">
+            <div className="section-heading">
+              <p className="eyebrow">SAY HELLO</p>
+              <h2>Contact<span>.</span></h2>
+            </div>
+            <p className="contact-intro">Have a project idea or want to connect? Find me here.</p>
+          </div>
+          <div className="contact-links">
+            <a className="contact-card" href="mailto:trevorparong@gmail.com">
+              <span className="contact-label">EMAIL</span><span className="contact-value">trevorparong@gmail.com</span><span className="contact-arrow">↗</span>
+            </a>
+            <a className="contact-card" href="https://github.com/MeAndante/Trev-ProgProfile" target="_blank" rel="noreferrer">
+              <span className="contact-label">GITHUB</span><span className="contact-value">MeAndante / Trev-ProgProfile</span><span className="contact-arrow">↗</span>
+            </a>
+            <a className="contact-card" href="https://www.facebook.com/pleees.dont.mind.me/directory_contact_info" target="_blank" rel="noreferrer">
+              <span className="contact-label">FACEBOOK</span><span className="contact-value">Connect on Facebook</span><span className="contact-arrow">↗</span>
+            </a>
           </div>
         </section>
       </main>
